@@ -4,8 +4,12 @@ public class Song extends Track{
 
     private String singer;
 
-    public Song(String singer, String title, double duration, Genre genre, double size) {
-        super(title, duration, size, genre);
+    public Song(){
+
+    }
+
+    public Song(String singer, String title, double duration, Genre genre) {
+        super(title, duration, genre);
         this.singer = singer;
     }
 

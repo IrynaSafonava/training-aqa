@@ -4,21 +4,15 @@ public class Track implements Comparable<Track>{
 
     private String title;
     private double duration;
-    private double size;
     private Genre genre;
 
-    public Track(String title, double duration, double size, Genre genre) {
+    public Track(){
+    }
+
+    public Track(String title, double duration, Genre genre) {
         this.title = title;
         this.duration = duration;
         this.genre = genre;
-    }
-
-    public double getSize() {
-        return size;
-    }
-
-    public void setSize(double size) {
-        this.size = size;
     }
 
     public String getTitle() {
@@ -50,7 +44,6 @@ public class Track implements Comparable<Track>{
         return "Track{" +
                 "title='" + title + '\'' +
                 ", duration=" + duration +
-                ", size=" + size +
                 ", genre=" + genre +
                 '}';
     }

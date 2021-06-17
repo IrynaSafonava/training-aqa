@@ -1,15 +1,10 @@
 package javatasks.javacollections.maintask;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Disc {
 
-    private List<Track> trackList;
+    private final double CD_MINUTE_CAPACITY= 80;
 
-    public List<Track> addTracksToPlayList(int number) {
+    public void addTracksToPlayList(int numberOfTracks) {
 
-        List<Track> playList = new ArrayList<>();
-        return playList;
     }
 }
